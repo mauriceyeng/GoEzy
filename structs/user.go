@@ -1,8 +1,11 @@
 package structs
 
 type User struct {
-	firstName string
-	lastName  string
-	email     string
-	contact   string
+	FirstName     string
+	LastName      string
+	Email         string
+	Contact       string
+	City          string
+	ID            int
+	WalletBalance float64
 }
