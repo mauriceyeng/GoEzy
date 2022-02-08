@@ -9,5 +9,6 @@ import (
 func main() {
 	router := gin.Default()
 	router.GET("/", handlers.Home)
+	router.POST("")
 	router.Run("localhost:8080")
 }
