@@ -16,5 +16,12 @@ func UserRegister(c *gin.Context) structs.User {
 		ID:            "69",
 		WalletBalance: 890.2,
 	}
+
+	/*
+		var newUser structs.User
+		if err := c.BindJSON(&newUser); err != nil {
+			return newUser
+		}
+	*/
 	return newUser
 }
