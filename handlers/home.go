@@ -16,3 +16,6 @@ func RegisterUser(c *gin.Context) {
 	user := controllers.UserRegister(c)
 	c.IndentedJSON(http.StatusCreated, user)
 }
+
+/*To GET: curl http://localhost:8080/user/register
+ */
