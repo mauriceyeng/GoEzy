@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
-
+import (
+	"fmt"
+	"GoEzy/structs"
+)
 func Welcome() string {
-	return fmt.Sprintf("Welcome to GoEzy. Your fav e-shop!")
+	msg:=structs.WelcomeMsg{
+		Msg: "Welcome to GoEzy"
+	}
+	return Welcome()
 }
