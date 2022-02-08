@@ -1,6 +1,10 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"GoEzy/structs"
+
+	"github.com/gin-gonic/gin"
+)
 
 func UserRegister(c *gin.Context) structs.User {
 	newUser := structs.User{
@@ -10,6 +14,7 @@ func UserRegister(c *gin.Context) structs.User {
 		Contact:       "9879876452",
 		City:          "go land",
 		ID:            "69",
-		WalletBalance: "967837.201",
+		WalletBalance: 890.2,
 	}
+	return newUser
 }
