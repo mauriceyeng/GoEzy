@@ -1,9 +1,18 @@
 package main
 
 import (
+	"GoEzy/controllers"
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 )
 
 func HomeHandler(c *gin.Context) {
-	c.IndentedJSON(200, controllers.Welcome)
+	message := controllers.Welcome(c)
+	c.IndentedJSON(200, message)
+}
+
+func RegisterUser(c *gin.Context) {
+	user := controllers.UserRegister(c)
+	c.IndentedJSON(http.StatusCreated, user)
 }
