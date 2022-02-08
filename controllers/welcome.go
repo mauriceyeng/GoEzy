@@ -8,5 +8,5 @@ func Welcome() string {
 	msg:=structs.WelcomeMsg{
 		Msg: "Welcome to GoEzy"
 	}
-	return Welcome()
+	return msg
 }
