@@ -24,4 +24,6 @@ func MerchantUpload(c *gin.Context) {
 	if err := c.BindJSON(&product); err != nil {
 		return
 	}
+	for 
+
 }
