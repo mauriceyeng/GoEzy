@@ -19,4 +19,9 @@ func MerchantLogout(c *gin.Context) {
 
 }
 
-func MerchantUpload(c *gin.Context)
+func MerchantUpload(c *gin.Context) {
+	var product models.Product
+	if err := c.BindJSON(&product); err != nil {
+		return
+	}
+}
